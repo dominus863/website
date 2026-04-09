@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Art of Money</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --text: #111;
+      --muted: #888;
+      --bg: #fafaf8;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      font-size: 17px;
+      line-height: 1.8;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 14vh 2rem 8vh;
+      width: 100%;
+    }
+
+    .label {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: normal;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 2.5rem;
+    }
+
+    .body-text {
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.9;
+      margin-bottom: 1.5rem;
+    }
+
+    .body-text + .body-text {
+      margin-top: -0.5rem;
+    }
+
+    .divider {
+      width: 2rem;
+      height: 1px;
+      background: #ccc;
+      margin: 4rem 0;
+    }
+
+    .contact-label {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-email {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 1rem;
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1px;
+      transition: border-color 0.2s;
+    }
+
+    .contact-email:hover {
+      border-color: var(--text);
+    }
+
+    footer {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 2rem 3rem;
+      width: 100%;
+    }
+
+    .footer-line {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: #bbb;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #e8e8e4;
+        --muted: #666;
+        --bg: #111110;
+      }
+      .body-text { color: #999; }
+      .divider { background: #2a2a28; }
+      .contact-email { border-color: #333; }
+      .contact-email:hover { border-color: var(--text); }
+      .footer-line { color: #333; }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <p class="label">The Fund — Est. 2024</p>
+
+    <h1>Your final opportunity.</h1>
+
+    <p class="body-text">
+      Look, this isnt the usual marketing scheme bullshit your used to.
+
+      I have been trading profitably for 2 years now using a proprietary
+      risk managment strategy, and im looking for bigger capital.
+
+      i will provide you with an average of 15% returns on a monthly basis,
+      you can start out with 50$, and then scale later as you wish.
+    </p>
+
+    <p class="body-text">
+      Not convinced?
+
+      Contact me and we'll sign a contract which gives you the ability
+      to take easy legal action if i dont fulfil my promises return-wise.
+
+      However most wont do that, they will convince themselves this is surely
+      fake to feel better and move on, 
+
+      but if you are serious, contact me.
+
+
+
+    </p>
+
+
+    <div class="divider"></div>
+
+    <p class="contact-label">Get in touch</p>
+    <a class="contact-email" href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
+  </main>
+
+  <footer>
+    <p class="footer-line">&copy; 2024</p>
+  </footer>
+
+</body>
+</html>
